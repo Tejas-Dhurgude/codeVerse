@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Layout from "./pages/Layout";
 import Login from "./pages/Login";
 import Prediction from "./pages/Prediction";
+import Analyse from "./pages/Analyse";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +28,10 @@ function App() {
           path: "/prediction",
           element: <Prediction />,
         },
+        {
+          path:"/analyse",
+          element:<Analyse/>
+        }
       ],
     },
   ]);
